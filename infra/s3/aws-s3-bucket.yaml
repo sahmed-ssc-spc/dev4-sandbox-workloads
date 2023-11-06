@@ -6,4 +6,4 @@ spec:
   forProvider:
     region: ca-central-1
   providerConfigRef:
-    name: dev-5-sandbox
+    name: dev-4-sandbox

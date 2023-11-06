@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: s3-bucket
+  name: dev4-sandbox-core-platform
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: dev4-sandbox-project
   source:
-    path: dev4-sandbox/infra/s3
-    repoURL: https://github.com/sahmed-ssc-spc/poc-s3-bucket.git
+    path: infra/s3
+    repoURL: https://github.com/sahmed-ssc-spc/dev4-sandbox-workloads.git
     targetRevision: HEAD
   destination:
     namespace: dev4-sandbox-workloads
