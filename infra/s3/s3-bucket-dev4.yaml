@@ -1,0 +1,9 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: crossplane-argocd-dev4-bucket
+spec:
+  forProvider:
+    region: ca-central-1
+  providerConfigRef:
+    name: dev-4-sandbox
